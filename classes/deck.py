@@ -26,7 +26,8 @@ class Deck:
         self.cards.append(card)
 
     def pop_card(self):
-        return self.cards.pop(0)
+        if len(self.cards):
+            return self.cards.pop(0)
 
     def shuffle(self):
         shuffle(self.cards)   
