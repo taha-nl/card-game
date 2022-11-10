@@ -8,7 +8,7 @@ class Card:
         self.rank=rank
 
     def __str__(self):
-        return f"suit ==> {self.Suits[self.suit]} \n rank ==> {self.Ranks[self.rank]}" 
+        return f"{self.Suits[self.suit]}  {self.Ranks[self.rank]}" 
 
     def __lt__(self,other):
         if self.suit!=other.suit:
